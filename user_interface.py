@@ -7,8 +7,8 @@ class UserInterface:
     # Ask the user for the operation to perform
     def get_operation(self):
         while True:
-            self.operation = input("Please choose a math operation (+, -, *, /): ")
-            if self.operation in ("+", "-", "*", "/", "**"):
+            self.operation = input("Please choose a math operation (+, -, *, /, power, sqr, sqrt): ")
+            if self.operation in ("+", "-", "*", "/", "**", "power", "sqr", "sqrt"):
                 break
             else:
                 print("Error: Invalid operation.")
@@ -39,6 +39,12 @@ class UserInterface:
                 print(f"{str(e)} Please enter a second number again.")
                 self.num2 = float(input("Enter the second number: "))
             self.result = self.num1 / self.num2
+        elif self.operation == "power":
+            self.result = self.num1 ** self.num2
+        elif self.operation == "sqr":
+            self.result = self.num1 ** 2
+        elif self.operation == "sqrt":
+            self.result = math.sqrt(self.num1)
 
     # Print the result
 
