@@ -8,3 +8,10 @@ class UserInterface:
     def get_operation(self):
         while True:
             self.operation = input("Please choose a math operation (+, -, *, /): ")
+
+    # Ask the user for two numbers
+    def get_numbers(self):
+        while True:
+            try:
+                self.num1 = float(input("Enter the first number: "))
+                self.num2 = float(input("Enter the second number: "))
