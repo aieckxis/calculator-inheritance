@@ -51,3 +51,25 @@ The program enters a while **loop**, which allows the user to perform multiple c
 <img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/16fa0be6-6dcb-4ff6-826d-00f10b73d7ef">
 
 Finally, the **main()** function is called to start the program if the script is executed directly.
+
+### — user_interface.py
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/1aa95142-764a-40e0-871f-8f69fd2fe881">
+
+The **UserInterface** class is defined with an **_ _ init _ _** method. This method initializes the class attributes **operation**, **num1**, and **num2** to default values.
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/95c7c0ce-8801-40b0-b412-868c12418167">
+
+The **get_operation** method is defined to ask the user for the desired math operation. It uses a while loop to repeatedly ask for input until a valid operation is entered. The valid operations are +, -, *, /, and power.
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/d5a489e0-bac3-4c0c-8f4d-3eeb16491f75">
+
+The **get_numbers** method is defined to ask the user for two numbers. It uses a **try-except** block to handle invalid inputs and continues to ask for input until two valid numbers are entered.
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/37e7c8cf-9c06-41b7-8a7b-5440e1095972">
+
+The **calculate_result** method is defined to perform the calculation based on the chosen operation. It uses a series of conditional statements **(if, elif)** to determine the operation and perform the corresponding calculation. The result is stored in the result attribute of the class.
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/d015ce8e-b4ff-472d-bd6c-62c4a246e135">
+
+The **print_result** method simply prints the result to the console.
