@@ -8,6 +8,10 @@ class UserInterface:
     def get_operation(self):
         while True:
             self.operation = input("Please choose a math operation (+, -, *, /): ")
+            if self.operation in ("+", "-", "*", "/", "**"):
+                break
+            else:
+                print("Error: Invalid operation.")
 
     # Ask the user for two numbers
     def get_numbers(self):
