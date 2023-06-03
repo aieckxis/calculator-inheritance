@@ -73,3 +73,25 @@ The **calculate_result** method is defined to perform the calculation based on t
 <img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/d015ce8e-b4ff-472d-bd6c-62c4a246e135">
 
 The **print_result** method simply prints the result to the console.
+
+### — extended_user_interface.py
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/7481e41f-3049-461f-806e-f22e23cad2a9">
+
+Imports the **UserInterface** class from the **user_interface** module. It allows the **UserInterface** class to be used in the current module.
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/ca46e870-87a8-4580-ae57-f59ef2bf39ee">
+
+The **ExtendedUserInterface** class inherits from the **UserInterface** class by specifying **UserInterface** in parentheses after the class name. The **get_operation()** method is overridden to provide a custom implementation. It asks the user to choose a math operation by taking input from the user and validates the input to ensure it is one of the valid operations: "+", "-", "*", "/", or "power".
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/356227ab-152f-4539-a3e0-c33db915cecb">
+
+The **get_numbers()** method is also overridden to provide a custom implementation. It asks the user to enter the first and second numbers, and performs input validation to ensure that valid floating-point numbers are entered. If an invalid input is provided, an error message is displayed.
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/d052f83a-33cd-4e3e-9438-3a1ef82c0b73">
+
+The **calculate_result()** method overrides the parent class's method. It first checks if the chosen operation is division ("/") and if the second number is **zero**. If both conditions are met, it displays an error message indicating that division by zero is not allowed, asks the user to enter the second number again using the **get_numbers()** method, and returns from the method. If the conditions are not met, it calls the parent class's **calculate_result()** method using **super().calculate_result()** to perform the calculation based on the chosen operation.
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/b36c75ef-345f-4dc5-a294-c2d7dea43347">
+
+The **print_result()** method overrides the parent class's method. It calls the parent class's **print_result()** method using **super().print_result()** to print the calculated result.
