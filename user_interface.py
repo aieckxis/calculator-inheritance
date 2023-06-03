@@ -3,6 +3,7 @@ class UserInterface:
     def __init__(self):
         self.operation = ""
         self.num1 = 0
+        self.num2 = 0
 
     # Ask the user for the operation to perform
     def get_operation(self):
