@@ -3,19 +3,19 @@
 
 # Import the UserInterface class from the user_interface module
 from user_interface import UserInterface
+# Import the ExtendedUserInterface class from the extended_user_interface module
+from extended_user_interface import ExtendedUserInterface
 
-# Create a main function to start the program
 def main():
-    # Create an instance of the UserInterface class
     ui = UserInterface()
+    eui = ExtendedUserInterface()
 
     while True:
-        ui.get_operation()
-        ui.get_numbers()
-        ui.calculate_result()
-        ui.print_result()
+        eui.get_operation()
+        eui.get_numbers()
+        eui.calculate_result()
+        eui.print_result()
 
-        # Ask the user if they want to try again
         try_again = input("Do you want to try again? (y/n): ").lower()
         while try_again != "y" and try_again != "n":
             try_again = input("Invalid input. Please enter 'y' to try again or 'n' to exit: ").lower()
@@ -24,6 +24,5 @@ def main():
             print("Okay, thank you!")
             break
 
-# Call the main function to start the program
 if __name__ == "__main__":
     main()
