@@ -1,3 +1,4 @@
+# Import the UserInterface class from the user_interface module
 from user_interface import UserInterface
 
 # Define ExtendedUserInterface class that inherits from UserInterface
