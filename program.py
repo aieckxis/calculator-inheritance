@@ -17,6 +17,9 @@ def main():
 
         # Ask the user if they want to try again
         try_again = input("Do you want to try again? (y/n): ").lower()
+        while try_again != "y" and try_again != "n":
+            try_again = input("Invalid input. Please enter 'y' to try again or 'n' to exit: ").lower()
+
         if try_again == "n":
             print("Okay, thank you!")
             break
