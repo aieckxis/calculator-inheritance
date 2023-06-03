@@ -12,6 +12,8 @@ def main():
     while True:
         ui.get_operation()
         ui.get_numbers()
+        ui.calculate_result()
+        ui.print_result()
 
 # Call the main function to start the program
 if __name__ == "__main__":
