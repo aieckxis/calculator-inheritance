@@ -1,3 +1,5 @@
+import math
+
 # Define UserInterface class
 class UserInterface:
     def __init__(self):
@@ -7,8 +9,8 @@ class UserInterface:
     # Ask the user for the operation to perform
     def get_operation(self):
         while True:
-            self.operation = input("Please choose a math operation (+, -, *, /, power, sqr, sqrt): ")
-            if self.operation in ("+", "-", "*", "/", "**", "power", "sqr", "sqrt"):
+            self.operation = input("Please choose a math operation (+, -, *, /, power): ")
+            if self.operation in ("+", "-", "*", "/", "**", "power"):
                 break
             else:
                 print("Error: Invalid operation.")
@@ -41,10 +43,6 @@ class UserInterface:
             self.result = self.num1 / self.num2
         elif self.operation == "power":
             self.result = self.num1 ** self.num2
-        elif self.operation == "sqr":
-            self.result = self.num1 ** 2
-        elif self.operation == "sqrt":
-            self.result = math.sqrt(self.num1)
 
     # Print the result
 
