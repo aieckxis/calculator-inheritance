@@ -95,3 +95,18 @@ The **calculate_result()** method overrides the parent class's method. It first 
 <img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/b36c75ef-345f-4dc5-a294-c2d7dea43347">
 
 The **print_result()** method overrides the parent class's method. It calls the parent class's **print_result()** method using **super().print_result()** to print the calculated result.
+
+### — try_again.py
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/1c9539db-7bdb-418d-814a-6135a273196c">
+
+The function is defined using the **def** keyword, followed by the function name **ask_try_again()**. It does not take any arguments and does not return any values.
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/2eafc119-0672-4282-82dd-a60bc3c25576">
+
+Within the function, there is a while **loop** that continues until a valid input is received from the user. This loop ensures that the user is asked repeatedly until they provide a valid response. Inside the **loop**, the user is asked with the question **"Do you want to try again? (y/n):"**. **The input()** function is used to capture the user's response, which is then converted to lowercase using the **.lower()** method. This conversion helps to make the comparison case-insensitive.
+
+<img width="600" alt="image" src="https://github.com/aieckxis/calculator-inheritance/assets/129574374/1a7d9953-7198-46c0-bd1f-502ea7a6db58">
+
+The user's input is then checked using an if statement to determine if it matches either **"y"** or **"n"**. If the input is valid, meaning it is either **"y"** or **"n"**, the function exits the loop using the **return** statement, and the user's response is returned as the result of the function. If the user enters an invalid input, any value other than **"y"** or **"n"**, an error message is displayed using the **print()** function. This informs the user that their input is invalid and prompts them to enter either **"y"** or **"n"** again. The function continues to loop until a valid input is provided by the user, ensuring that the program does not proceed until a valid choice is made.
+
