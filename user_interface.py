@@ -15,3 +15,6 @@ class UserInterface:
             try:
                 self.num1 = float(input("Enter the first number: "))
                 self.num2 = float(input("Enter the second number: "))
+                break
+        except ValueError:
+            print("Error: Invalid input. Please enter a number.")
